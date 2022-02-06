@@ -70,10 +70,10 @@ Bibtex entries for citation:
 ```
 
 ## Repository Structure
-We point out next the repository structure and some important folders and files. 
-The "spmv" directory includes all the 1D- and 2D-partitioned SpMV kernels of <i>SparseP</i> software package, i.e., 9 1D-partitioned and 16 2D-partitioned SpMV kernels. 
-The "inputs" directory includes a bash script to download matrix files (in mtx format) from the [Suite Sparse Matrix Collection](https://sparse.tamu.edu/). 
-The "scripts" directory includes python3 scripts to run experiments for the 1D- and 2D-partitioned SparseP kernels. 
+We point out next the repository structure and some important folders and files.<br> 
+The "spmv" directory includes all the 1D- and 2D-partitioned SpMV kernels of <i>SparseP</i> software package, i.e., 9 1D-partitioned and 16 2D-partitioned SpMV kernels.<br> 
+The "inputs" directory includes a bash script to download matrix files (in mtx format) from the [Suite Sparse Matrix Collection](https://sparse.tamu.edu/).<br> 
+The "scripts" directory includes python3 scripts to run experiments for the 1D- and 2D-partitioned SparseP kernels.<br>
 
 ```
 .
