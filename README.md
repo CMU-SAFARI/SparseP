@@ -1,7 +1,7 @@
 ## SparseP Software Package v1.0
 
 <p align="center">
-  <img width="600" height="338" src="https://github.com/CMU-SAFARI/SparseP/images/SparseP-logo.png">
+  <img width="600" height="338" src="https://github.com/CMU-SAFARI/SparseP/blob/main/images/SparseP-logo.png">
 </p>
 
 <i>SparseP</i> software package is a collection of efficient Sparse Matrix Vector Multiplication (SpMV) kernels for real-world Processing-In-Memory (PIM) architectures. <i>SparseP</i> is written in C programming language and provides 25 SpMV kernels. <i>SparseP</i> can be useful to developers of solver libraries and of scientific applications to attain high performance and energy efficiency of the SpMV kernel on real-world PIM architectures, and to software, architecture and system researchers to improve multiple aspects of future PIM hardware and software.
@@ -115,7 +115,7 @@ The "scripts" directory includes python3 scripts to run experiments for the 1D- 
 The following table summarizes the SpMV PIM kernels provided by the SparseP software package. 
 
 <p align="center">
-  <img width="606" height="499" src="https://github.com/CMU-SAFARI/SparseP/images/SparseP-kernels.png">
+  <img width="606" height="499" src="https://github.com/CMU-SAFARI/SparseP/blob/main/images/SparseP-kernels.png">
 </p>
 
 ## Requirements 
