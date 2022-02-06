@@ -115,7 +115,7 @@ The "scripts" directory includes python3 scripts to run experiments for the 1D- 
 The following table summarizes the SpMV PIM kernels provided by the SparseP software package. 
 
 <p align="center">
-  <img width="606" height="499" src="https://github.com/CMU-SAFARI/SparseP/blob/main/images/SparseP-kernels.png">
+  <img width="800" height="600" src="https://github.com/CMU-SAFARI/SparseP/blob/main/images/SparseP-kernels.png">
 </p>
 
 ## Requirements 
