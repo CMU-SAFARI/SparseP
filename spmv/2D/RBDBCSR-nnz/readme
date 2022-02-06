@@ -1,0 +1,6 @@
+Common Issues
+- NR_DPUS needs to be a multiple of the number of vertical partitions
+- BLNC_TSKLT_BLOCK, BLNC_TSKLT_NNZ are used interchangeably (only one of them needs to be set to 1)
+- CG_TRANS, FG_TRANS are used interchangeably (only one of them needs to be set to 1)
+- CGLOCK, FGLOCK are used interchangeably (only one of them needs to be set to 1) for small block sizes (e.g., int8 and 4x4 block size or int16 and 2x2 block size)
+- block sizes need to be a multiple of 8 bytes based on the memory footprint of the datatype

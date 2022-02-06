@@ -1,0 +1,8 @@
+Common Issues
+- NR_DPUS needs to be a multiple of the number of vertical partitions
+- CGLOCK, FGLOCK, LOCKFREE are used interchangeably (only one of them needs to be set to 1)
+- CPU-DPU Transfers - possible options:
+    - CG_TRANS=1, YFG_TRANS=0, FG_TRANS=0 --> Coarse-grained data transfers for input and output vectors
+    - CG_TRANS=0, YFG_TRANS=1, FG_TRANS=1 --> Fine-grained data transfers only for output vector
+    - CG_TRANS=0, YFG_TRANS=0, FG_TRANS=1 --> Fine-grained data transfers for both the input and output vectors
+

@@ -1,0 +1,3 @@
+Common Issues
+- BLNC_TSKLT_ROW, BLNC_TSKLT_NNZ are used interchangeably (only one of them needs to be set to 1)
+- For 24 tasklets, define the sequential reader to be smaller, (i.e., #define SEQREAD_CACHE_SIZE 128). Otherwise, program exceeds the 64KB WRAM memory.

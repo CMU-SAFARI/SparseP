@@ -1,0 +1,5 @@
+Common Issues
+- NR_DPUS needs to be a multiple of the number of vertical partitions
+- BLNC_TSKLT_ROW, BLNC_TSKLT_NNZ are used interchangeably (only one of them needs to be set to 1)
+- CG_TRANS, FG_TRANS are used interchangeably (only one of them needs to be set to 1)
+- For 24 tasklets, define the sequential reader to be smaller, (i.e., #define SEQREAD_CACHE_SIZE 128). Otherwise, program exceeds the 64KB WRAM memory.

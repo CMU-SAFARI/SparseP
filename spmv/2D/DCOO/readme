@@ -1,0 +1,3 @@
+Common Issues
+- NR_DPUS needs to be a multiple of the number of vertical partitions
+- CGLOCK, FGLOCK, LOCKFREE are used interchangeably (only one of them needs to be set to 1)

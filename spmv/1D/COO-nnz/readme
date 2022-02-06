@@ -1,0 +1,2 @@
+Common Issues
+- CGLOCK, FGLOCK, LOCKFREE are used interchangeably (only one of them needs to be set to 1)
