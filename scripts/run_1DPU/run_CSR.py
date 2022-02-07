@@ -3,17 +3,17 @@ import sys
 import glob
 import getpass
 
-result_path = "results/"
+result_path = "results_1DPU/"
 
 def run(input_path):
     
-    NR_TASKLETS = [16]
-    NR_DPUS = [2048]
-    DATATYPES = ["int8", "int16", "int32", "int64", "fp32", "fp64"]
-    MATRICES = ["ldoor.mtx", "af_shell1.mtx", "roadNet-TX.mtx", "parabolic_fem.mtx", "poisson3Db.mtx", "delaunay_n19.mtx", "com-Youtube.mtx", "pkustk14.mtx"]
+    NR_TASKLETS = [1, 2, 4, 8, 12, 16, 20, 24]
+    NR_DPUS = [1]
+    DATATYPES = ["int8", "int32", "int16", "int64", "fp32", "fp64"]
+    MATRICES = ["wing_nodal.mtx", "delaunay_n13.mtx", "pkustk08.mtx", "raefsky4.mtx"]
 
     pwd = os.getcwd()
-    path = pwd.replace("scripts/run_1D", "") + "spmv/1D/COO-nnz-rgrn"
+    path = pwd.replace("scripts/run_1D", "") + "spmv/1D/CSR-row"
     os.chdir(path)
     os.makedirs(result_path, exist_ok=True)
     for file in MATRICES:

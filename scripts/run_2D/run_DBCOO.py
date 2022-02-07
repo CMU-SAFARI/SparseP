@@ -8,9 +8,9 @@ result_path = "results/"
 def run(input_path):
 
     NR_TASKLETS = [16]
-    NR_DPUS = [1024, 2048]
-    NR_VERT_PARTITIONS = [4, 8]
-    DATATYPES = ["int8", "int16", "int32", "int64"]
+    NR_DPUS = [256, 512, 1024, 2048, 2528]
+    NR_VERT_PARTITIONS = [2, 4, 8, 16, 32]
+    DATATYPES = ["int8", "int32", "fp32", "fp64"]
     MATRICES = ["ldoor.mtx", "af_shell1.mtx", "roadNet-TX.mtx", "parabolic_fem.mtx", "poisson3Db.mtx", "delaunay_n19.mtx", "com-Youtube.mtx", "pkustk14.mtx"]
 
     pwd = os.getcwd()

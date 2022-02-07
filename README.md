@@ -6,7 +6,7 @@
 
 <i>SparseP</i> software package is a collection of efficient Sparse Matrix Vector Multiplication (SpMV) kernels for real-world Processing-In-Memory (PIM) architectures. <i>SparseP</i> is written in C programming language and provides 25 SpMV kernels. <i>SparseP</i> can be useful to developers of solver libraries and of scientific applications to attain high performance and energy efficiency of the SpMV kernel on real-world PIM architectures, and to software, architecture and system researchers to improve multiple aspects of future PIM hardware and software.
 
-<i>SparseP</i> is developed to evaluate, analyze, and characterize the first publicly-available real-world PIM architecture, the [UPMEM](https://www.upmem.com/) PIM architecture. The UPMEM PIM architecture is a near-bank PIM architecture that supports several PIM-enabled memory chips connected to a host CPU via memory channels. Each memory chip comprises multiple general-purpose in-order cores, called DRAM Processing Units (DPUs), each of them is tightly coupled with a DRAM bank.
+<i>SparseP</i> is developed to evaluate, analyze, and characterize the first publicly-available real-world PIM architecture, the [UPMEM](https://www.upmem.com/) PIM architecture. The UPMEM PIM architecture is a near-bank PIM architecture that supports several PIM-enabled memory chips connected to a host CPU via memory channels. Each memory chip comprises multiple general-purpose in-order cores, called DRAM Processing Units (DPUs), each of them is tightly coupled with a DRAM bank. For a thorough characterization analysis of the UPMEM PIM architecture, please see our [CUT'21](https://people.inf.ethz.ch/omutlu/pub/Benchmarking-Memory-Centric-Computing-Systems_cut21.pdf) and [arXiv'21](https://arxiv.org/pdf/2105.03814.pdf) papers, and check out the [PrIM benchmark suite](https://github.com/CMU-SAFARI/prim-benchmarks), a collection of diverse workloads to characterize real-world PIM architectures.
 
 <i>SparseP</i> efficiently maps the SpMV execution kernel on near-bank PIM systems and supports:
 * a wide range of data types: 
@@ -82,6 +82,9 @@ The "scripts" directory includes python3 scripts to run experiments for the 1D- 
 +-- images/ 
 +-- inputs/ 
 +-- scripts/ 
+|   +-- run_1DPU/
+|   +-- run_1D/
+|   +-- run_2D/
 +-- spmv/ 
 |   +-- 1D/
 |	|	+-- CSR-row/
@@ -140,6 +143,18 @@ cd inputs
 ./download_matrices.sh 
 ```
 
+
+### Run the SpMV on one DPU (multiple tasklets)
+
+```sh
+cd scripts/run_1DPU
+
+## FIXME input_path="/path/to/matrices"
+## To use this script, update the path to the input matrix files
+./run_1DPU.sh 
+```
+
+
 ### Run the 1D-Partitioned SpMV Kernels
 
 ```sh
@@ -149,6 +164,7 @@ cd scripts/run_1D
 ## To use this script, update the path to the input matrix files
 ./run_1D.sh 
 ```
+
 
 ### Run the 2D-Partitioned SpMV Kernels
 

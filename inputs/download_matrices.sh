@@ -77,4 +77,40 @@ if [ ! -f "pkustk14.mtx" ]; then
 fi
 
 
+if [ ! -f "wing_nodal.mtx" ]; then
+  wget -N https://suitesparse-collection-website.herokuapp.com/MM/DIMACS10/wing_nodal.tar.gz
+  tar xzf wing_nodal.tar.gz 
+  mv wing_nodal/wing_nodal.mtx .
+  rm -rf wing_nodal/
+  rm "wing_nodal.tar.gz"
+fi
+
+
+if [ ! -f "delaunay_n13.mtx" ]; then
+  wget -N https://suitesparse-collection-website.herokuapp.com/MM/DIMACS10/delaunay_n13.tar.gz
+  tar xzf delaunay_n13.tar.gz 
+  mv delaunay_n13/delaunay_n13.mtx .
+  rm -rf delaunay_n13/
+  rm "delaunay_n13.tar.gz"
+fi
+
+
+if [ ! -f "pkustk08.mtx" ]; then
+  wget -N https://suitesparse-collection-website.herokuapp.com/MM/Chen/pkustk08.tar.gz
+  tar xzf pkustk08.tar.gz 
+  mv pkustk08/pkustk08.mtx .
+  rm -rf pkustk08/
+  rm "pkustk08.tar.gz"
+fi
+
+
+if [ ! -f "raefsky4.mtx" ]; then
+  wget -N https://suitesparse-collection-website.herokuapp.com/MM/Simon/raefsky4.tar.gz
+  tar xzf raefsky4.tar.gz 
+  mv raefsky4/raefsky4.mtx .
+  rm -rf raefsky4/
+  rm "raefsky4.tar.gz"
+fi
+
+
 echo "Finished downloading and extracting .mtx files"
