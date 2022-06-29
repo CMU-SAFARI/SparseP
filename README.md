@@ -59,6 +59,24 @@ Bibtex entries for citation:
 ```
 
 ```
+@inproceedings{Giannoula2022SparsePSigmetrics,
+	author={Christina Giannoula and Ivan Fernandez and Juan Gómez-Luna and Nectarios Koziris and Georgios Goumas and Onur Mutlu},
+	title={Towards Efficient Sparse Matrix Vector Multiplication on Real Processing-In-Memory Architectures}, 
+	year = {2022},
+        isbn = {9781450391412},
+	publisher = {Association for Computing Machinery},
+	url = {https://doi.org/10.1145/3489048.3522661},
+	doi = {10.1145/3489048.3522661},
+        booktitle = {Abstract Proceedings of the 2022 ACM SIGMETRICS/IFIP PERFORMANCE Joint International Conference on Measurement and Modeling of Computer Systems},
+        pages = {33–34},
+        numpages = {2},
+        location = {Mumbai, India},
+        series = {SIGMETRICS/PERFORMANCE '22}
+}
+```
+
+
+```
 @misc{Giannoula2022SparseParXiv
       title={SparseP: Towards Efficient Sparse Matrix Vector Multiplication on Real Processing-In-Memory Systems}, 
       author={Christina Giannoula and Ivan Fernandez and Juan Gómez-Luna and Nectarios Koziris and Georgios Goumas and Onur Mutlu},
